@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrnagar.blindcolo.FullscreenActivity">
+
+    <FrameLayout
+        android:id="@+id/cam_prev"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+    </FrameLayout>
+    <SurfaceView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:background="@android:color/background_dark"
+        android:id="@+id/tv1"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:background="@color/black_overlay"
+        android:id="@+id/rval"
+        android:text="RED      : 000"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:background="@color/black_overlay"
+        android:id="@+id/gval"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:text="GREEN : 000"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="15dp"
+        android:layout_marginTop="90dp"
+        android:layout_width="100dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:background="@color/black_overlay"
+        android:id="@+id/bval"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:text="BLUE    : 000"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="15dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="100dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/C_name"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="COLOR :  "
+        android:layout_above="@id/tv1"/>
+    <TextView
+        android:background="@android:color/white"
+        android:id="@+id/color_closest"
+        android:textSize="15dp"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</FrameLayout>
