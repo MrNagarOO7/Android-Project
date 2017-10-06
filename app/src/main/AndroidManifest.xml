@@ -2,11 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mrnagar.blindcolo">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.Camera"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -21,6 +24,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ImgColo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_img_colo"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".DrawerColo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_drawer_colo"
+            android:theme="@style/FullscreenTheme"></activity>
     </application>
 
 </manifest>
