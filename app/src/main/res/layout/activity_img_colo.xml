@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrnagar.blindcolo.ImgColo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/file_color_view"
+            android:background="@android:color/holo_green_light"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"/>
+
+
+        <SurfaceView
+            android:id="@+id/file_surface"
+            android:layout_above="@id/file_color_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/file_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/file_color_view"/>
+
+        <TextView
+            android:background="@color/black_overlay"
+            android:id="@+id/rval1"
+            android:text="RED      : 000"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="15dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:background="@color/black_overlay"
+            android:id="@+id/gval1"
+            android:paddingLeft="8dp"
+            android:paddingTop="3dp"
+            android:text="GREEN : 000"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="15dp"
+            android:layout_marginTop="90dp"
+            android:layout_width="100dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:background="@color/black_overlay"
+            android:id="@+id/bval1"
+            android:paddingLeft="8dp"
+            android:paddingTop="3dp"
+            android:text="BLUE    : 000"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_width="100dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/C_name1"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="COLOR :  "
+            android:layout_above="@id/file_color_view"/>
+
+        <Button
+            android:id="@+id/file_add"
+            android:text="FILE"
+            android:textColor="@android:color/black"
+            android:background="@drawable/shape"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@id/C_name1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

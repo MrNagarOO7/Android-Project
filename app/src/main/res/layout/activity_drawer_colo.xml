@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrnagar.blindcolo.DrawerColo">
+
+    <GridView
+        android:background="@android:color/white"
+        android:id="@+id/img_colo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3">
+    </GridView>
+
+
+</FrameLayout>
