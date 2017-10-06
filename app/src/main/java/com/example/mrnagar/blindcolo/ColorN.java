@@ -1,6 +1,8 @@
 package com.example.mrnagar.blindcolo;
 
+import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -10,6 +12,8 @@ import static java.lang.Math.abs;
  * Created by Mr.Nagar on 28-07-2017.
  */
 public class ColorN {
+    static int [] yopp = new int[2];
+    String tag = "SE";
     static ArrayList<String[]> colorList=new ArrayList<>();
     static{
         colorList.add(new String[] {"Midnight Express", "0", "7", "65"});
@@ -1412,4 +1416,49 @@ public class ColorN {
         }
         return  name;
     }
+
+   /* public String[] getColorName1(int red,int green,int blue){
+        int r,g,b,start=0,end=1382,mid,total,midtotal,endtotal,starttoatal;
+        String[] name = null;
+        for(int i =0;i<10;i++){
+            mid = (end+start)/2;
+            r = Integer.parseInt(String.valueOf(colorList.get(1)[mid]));
+            g = Integer.parseInt(String.valueOf(colorList.get(2)[mid]));
+            b = Integer.parseInt(String.valueOf(colorList.get(3)[mid]));
+            midtotal = r+g+b;
+            total = red+green+blue;
+            if(midtotal > total){
+                end = mid;
+            }
+            else {
+                start = mid ;
+            }
+
+        }
+        Log.d(tag,"start:"+start+" end:"+end);
+        r = Integer.parseInt(String.valueOf(colorList.get(1)[end]));
+        g = Integer.parseInt(String.valueOf(colorList.get(2)[end]));
+        b = Integer.parseInt(String.valueOf(colorList.get(3)[end]));
+        endtotal = r+g+b;
+        r = Integer.parseInt(String.valueOf(colorList.get(1)[start]));
+        g = Integer.parseInt(String.valueOf(colorList.get(2)[start]));
+        b = Integer.parseInt(String.valueOf(colorList.get(3)[start]));
+        starttoatal = r+g+b;
+
+        yopp[0]=start;
+        yopp[1]=end;
+
+        if(endtotal > starttoatal){
+            name = colorList.get(start);
+        }
+        else{
+            name = colorList.get(end);
+        }
+
+        return name;
+    }
+
+    public int[] getYopp(){
+        return yopp;
+    }*/
 }
